@@ -1,0 +1,29 @@
+<?php
+echo "Ordena tres numeros\n";
+
+$num1 = readline("Introduce el primer numero: ");
+
+$num2 = readline("Introduce el segundo numero: ");
+
+$num3 = readline("Introduce el tercer numero: ");
+
+if ($num1 > $num2) {
+    $temp = $num1;
+    $num1 = $num2;
+    $num2 = $temp;
+}
+
+else if ($num1 > $num3) {
+    $temp = $num1;
+    $num1 = $num3;
+    $num3 = $temp;
+}
+
+else if ($num2 > $num3) {
+    $temp = $num2;
+    $num2 = $num3;
+    $num3 = $temp;
+}
+
+echo "Los numeros ordenados de menor a mayor son: $num1, $num2, $num3\n";
+?>
