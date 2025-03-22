@@ -1,0 +1,7 @@
+<?php
+$celsius = (float)readline("Ingresa la temperatura en grados Celsius: ");
+
+$fahrenheit = ($celsius * 9 / 5) + 32;
+
+echo "La temperatura en grados Fahrenheit es: $fahrenheit\n";
+?>
