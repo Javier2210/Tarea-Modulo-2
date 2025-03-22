@@ -1,0 +1,224 @@
+<?php
+echo "Ordena tres numeros\n";
+
+$num1 = readline("Introduce el primer numero: ");
+
+$num2 = readline("Introduce el segundo numero: ");
+
+$num3 = readline("Introduce el tercer numero: ");
+
+if ($num1 > $num2) {
+    $temp = $num1;
+    $num1 = $num2;
+    $num2 = $temp;
+}
+
+else if ($num1 > $num3) {
+    $temp = $num1;
+    $num1 = $num3;
+    $num3 = $temp;
+}
+
+else if ($num2 > $num3) {
+    $temp = $num2;
+    $num2 = $num3;
+    $num3 = $temp;
+}
+
+echo "Los numeros ordenados de menor a mayor: $num1, $num2, $num3\n";
+?>
+
+
+
+
+
+
+<?php
+echo "Calculadora\n";
+
+
+$a = readline("Ingrese el primer numero: ");
+$b = readline("Ingrese el segundo numero: ");
+$operacion = readline("Ingrese la operacion (+,*,-,/): ");
+
+switch($operacion){ 
+    case '+':
+        $resultado = $a + $b;
+        echo "El resultado es: $resultado \n";
+        break;
+    case '-':
+        $resultado = $a - $b;
+        echo "El resultado es: $resultado\n";
+        break;
+    case '*':
+        $resultado = $a * $b;
+        echo "El resultado es: $resultado\n";
+        break;
+
+    case '/':
+        if ($b != 0) {
+            $resultado = $a / $b;
+            echo "El resultado es: $resultado\n";
+        } else {
+            echo "Error, no se puede dividir entre 0.\n";
+        }
+        break;
+    default:
+        echo "Operación inválida. Ingrese una operación válida (+, -, *, /).\n";
+        break;
+}        
+?>
+
+
+
+
+
+
+<?php
+echo "Tabla de multiplicar\n";
+$numero = (int)readline ("Indique un numero del 1 al 10: "); 
+
+ if ($numero <= 10) {
+    echo "$numero * 1 = " . ($numero * 1) . "\n";
+    echo "$numero * 2 = " . ($numero * 2) . "\n";
+    echo "$numero * 3 = " . ($numero * 3) . "\n";
+    echo "$numero * 4 = " . ($numero * 4) . "\n";
+    echo "$numero * 5 = " . ($numero * 5) . "\n";
+    echo "$numero * 6 = " . ($numero * 6) . "\n";
+    echo "$numero * 7 = " . ($numero * 7) . "\n";
+    echo "$numero * 8 = " . ($numero * 8) . "\n";
+    echo "$numero * 9 = " . ($numero * 9) . "\n";
+    echo "$numero * 10 = " . ($numero * 10) . "\n";
+} else {
+    echo"Numero invalido";
+ }
+?>
+
+
+
+
+
+//Ejercicio 1
+
+let añonacimiento = prompt("Indica tu año de nacimiento: ");
+let añoactual = 2025 - añonacimiento;
+console.log("Tienes actualmente",añoactual,"años");
+
+//Ejercicio 2
+
+let suma = 0;
+for (let i = 2; i <=100; i+=2){
+    suma +=i;
+}
+console.log("La suma de numeros pares del 2 al 100 es:",suma) 
+
+//Ejercicio 3
+
+let numero = prompt("Indica un numero del 1 al 10: ")
+
+if(numero <=10) {
+    console.log(numero,"* 1 =" ,numero*1)
+    console.log(numero,"* 2 =" ,numero*2)
+    console.log(numero,"* 3 =" ,numero*3)
+    console.log(numero,"* 4 =" ,numero*4)
+    console.log(numero,"* 5 =" ,numero*5)
+    console.log(numero,"* 6 =" ,numero*6)
+    console.log(numero,"* 7 =" ,numero*7)
+    console.log(numero,"* 8 =" ,numero*8)
+    console.log(numero,"* 9 =" ,numero*9)
+    console.log(numero,"* 10 =" ,numero*10)}
+else{
+    console.log("Numero invalido")
+}
+
+//Ejercicio 4
+
+let parimpar = prompt("Indica un numero: ")
+if (parimpar % 2 == 0){
+    console.log("El numero es par")}
+else if (parimpar % 2 !=0){
+    console.log("El numero es impar")}
+
+
+
+
+
+<?php
+$suma = 0;
+for ($i = 1; $i <= 100; $i++){
+    if ($i % 2 == 0){
+       $suma +=$i;}
+}
+
+echo "La suma de numeros pares entre el 2 y 100 es: $suma"
+?>
+
+
+
+
+
+<?php
+$oracion = readline("Ingresa una oracion: ");
+
+$vocales = 0;
+
+
+for ($i = 0; $i < strlen($oracion); $i++) {
+    if (in_array($oracion[$i], ['a', 'e', 'i', 'o', 'u'])) {
+        $vocales++;
+    }
+}
+
+echo "El numero de vocales en la oracion es: $vocales";
+?>
+
+
+
+
+
+<?php
+$celsius = (float)readline("Ingresa la temperatura en grados Celsius: ");
+
+$fahrenheit = ($celsius * 9 / 5) + 32;
+
+echo "La temperatura en grados Fahrenheit es: $fahrenheit\n";
+?>
+
+
+
+
+
+
+<?php
+$edad = (int)readline("Ingresa tu edad: ");
+
+if ($edad >= 18) {
+    echo "Eres mayor de edad.\n";
+} else {
+    echo "Eres menor de edad.\n";
+}
+?>
+
+
+
+
+
+<?php
+$calificaciones = (int)readline("Cuantas calificaciones deseas ingresar?: ");
+
+$suma = 0;
+
+for ($i = 1; $i <= $calificaciones; $i++) {
+    $calificacion = (float)readline("Ingresa la calificación $i: ");
+    $suma += $calificacion;
+}
+
+$promedio = $suma / $calificaciones;
+
+echo "El promedio de las calificaciones es: $promedio\n";
+?>
+
+
+
+
+
