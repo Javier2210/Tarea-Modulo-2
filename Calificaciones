@@ -1,0 +1,14 @@
+<?php
+$calificaciones = (int)readline("Cuantas calificaciones deseas ingresar?: ");
+
+$suma = 0;
+
+for ($i = 1; $i <= $calificaciones; $i++) {
+    $calificacion = (float)readline("Ingresa la calificación $i: ");
+    $suma += $calificacion;
+}
+
+$promedio = $suma / $calificaciones;
+
+echo "El promedio de las calificaciones es: $promedio\n";
+?>
