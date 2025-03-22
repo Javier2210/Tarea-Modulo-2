@@ -1,0 +1,40 @@
+//Ejercicio 1
+
+let añonacimiento = prompt("Indica tu año de nacimiento: ");
+let añoactual = 2025 - añonacimiento;
+console.log("Tienes actualmente",añoactual,"años");
+
+//Ejercicio 2
+
+let suma = 0;
+for (let i = 2; i <=100; i+=2){
+    suma +=i;
+}
+console.log("La suma de numeros pares del 2 al 100 es:",suma) 
+
+//Ejercicio 3
+
+let numero = prompt("Indica un numero del 1 al 10: ")
+
+if(numero <=10) {
+    console.log(numero,"* 1 =" ,numero*1)
+    console.log(numero,"* 2 =" ,numero*2)
+    console.log(numero,"* 3 =" ,numero*3)
+    console.log(numero,"* 4 =" ,numero*4)
+    console.log(numero,"* 5 =" ,numero*5)
+    console.log(numero,"* 6 =" ,numero*6)
+    console.log(numero,"* 7 =" ,numero*7)
+    console.log(numero,"* 8 =" ,numero*8)
+    console.log(numero,"* 9 =" ,numero*9)
+    console.log(numero,"* 10 =" ,numero*10)}
+else{
+    console.log("Numero invalido")
+}
+
+//Ejercicio 4
+
+let parimpar = prompt("Indica un numero: ")
+if (parimpar % 2 == 0){
+    console.log("El numero es par")}
+else if (parimpar % 2 !=0){
+    console.log("El numero es impar")}
