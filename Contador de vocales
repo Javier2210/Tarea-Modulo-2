@@ -1,0 +1,14 @@
+<?php
+$oracion = readline("Ingresa una oracion: ");
+
+$vocales = 0;
+
+
+for ($i = 0; $i < strlen($oracion); $i++) {
+    if (in_array($oracion[$i], ['a', 'e', 'i', 'o', 'u'])) {
+        $vocales++;
+    }
+}
+
+echo "El numero de vocales en la oracion es: $vocales";
+?>
