@@ -1,0 +1,35 @@
+<?php
+echo "Calculadora\n";
+
+
+$a = readline("Ingrese el primer numero: ");
+$b = readline("Ingrese el segundo numero: ");
+$operacion = readline("Ingrese la operacion (+,*,-,/): ");
+
+switch($operacion){ 
+    case '+':
+        $resultado = $a + $b;
+        echo "El resultado es: $resultado \n";
+        break;
+    case '-':
+        $resultado = $a - $b;
+        echo "El resultado es: $resultado\n";
+        break;
+    case '*':
+        $resultado = $a * $b;
+        echo "El resultado es: $resultado\n";
+        break;
+
+    case '/':
+        if ($b != 0) {
+            $resultado = $a / $b;
+            echo "El resultado es: $resultado\n";
+        } else {
+            echo "Error, no se puede dividir entre 0.\n";
+        }
+        break;
+    default:
+        echo "Operación inválida. Ingrese una operación válida (+, -, *, /).\n";
+        break;
+}        
+?>
