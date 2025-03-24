@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agregar Elementos</title>
+</head>
+<body>
+  <h1>Lista</h1>
+  <ul id="milista">
+    <!-- Los elementos nuevos se agregaran aquí -->
+  </ul>
+  <button onclick="agregarelemento()">Agregar elemento</button>
+
+  <script>
+    function agregarelemento() {
+
+      const nuevoelemento = document.createelement("li");
+
+      nuevoelemento.textContent = "Nuevo elemento";
+
+      const lista = document.getelementById("milista");
+      lista.appendchild(nuevoelemento);
+    }
+  </script>
+</body>
+</html>
