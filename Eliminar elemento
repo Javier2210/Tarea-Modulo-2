@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eliminar Elementos</title>
+</head>
+<body>
+  <h1>Lista para eliminar elementos</h1>
+  <ul id="lista">
+    <li id="item1">Elemento 1 <button onclick="eliminarElemento('item1')">Eliminar</button></li>
+    <li id="item2">Elemento 2 <button onclick="eliminarElemento('item2')">Eliminar</button></li>
+    <li id="item3">Elemento 3 <button onclick="eliminarElemento('item3')">Eliminar</button></li>
+  </ul>
+
+  <script>
+    function eliminarelemento(id) {
+
+      const elemento = document.getElementById(id);
+
+      if (elemento) {
+        elemento.remove();
+      } else {
+        alert("El elemento no existe.");
+      }
+    }
+  </script>
+</body>
+</html>
