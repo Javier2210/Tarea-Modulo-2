@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cambiar Estilo</title>
+  <style>
+    #caja {
+      width: 200px;
+      height: 100px;
+      background-color: blue;
+      text-align: center;
+      line-height: 100px;
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <div id="caja">Color original</div>
+  <button onclick="cambiarColor()">Cambiar color</button>
+
+  <script>
+    function cambiarColor() 
+      const caja = document.getelementById("caja");
+
+      caja.style.backgroundcolor = "red";
+    }
+  </script>
+</body>
+</html>
