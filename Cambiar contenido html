@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambiar Contenido</title>
+</head>
+<body>
+  <h1 id="titulo">Texto original</h1>
+  <button onclick="cambiartexto()">Haz clic aqui</button>
+
+  <script>
+    function cambiartexto() {
+      const titulo = document.getelementById("titulo");
+
+      titulo.textContent = "Texto cambiado";
+    }
+  </script>
+</body>
+</html>
